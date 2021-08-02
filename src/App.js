@@ -1,13 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import _header from "./partials/_header";
+import Header from "./partials/_header";
 import Index from "./pages/index"
+import Footer from "./partials/_footer";
 function App() {
   return (
     <div className="App">
-      <_header />
+      <Header />
       <br/>
       <Index />
+      <br/>
+      <Footer />
     </div>
   );
 }

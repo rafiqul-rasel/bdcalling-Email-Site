@@ -1,6 +1,17 @@
-import React, {Component} from 'react';
-import {Container,Col,Row,Card,InputGroup,FormControl,Button,Form,FormGroup} from "react-bootstrap";
-import Styles from "../assets/css/style.css"
+import React, { Component } from "react";
+import {
+    Container,
+    Col,
+    Row,
+    Card,
+    InputGroup,
+    FormControl,
+    Button,
+    Form,
+} from "react-bootstrap";
+import "../assets/css/style.css";
+import SingleMailChecker from "../component/single_mail_checker";
+import ListMailChecker from "../component/list_mail_checker";
 class Index extends Component {
     render() {
         return (
@@ -8,66 +19,19 @@ class Index extends Component {
                 <Container>
                     <Row>
                         <Col></Col>
+                        <br />
+
                         <Col xs={8}>
+                            <SingleMailChecker />
 
-                            <Card>
-                                <br/>
-                                <Container>
-                                    <div className="Row">
-                                        <div className="col">
-                                            <InputGroup className="mb-3">
-                                                <FormControl
-                                                    placeholder="Search Email"
-                                                    aria-label="Search Email"
-                                                    aria-describedby="basic-addon2"
-                                                />
-                                                <InputGroup.Append>
-                                                    <Button variant="info">Search</Button>
-                                                </InputGroup.Append>
-                                            </InputGroup>
-                                        </div>
-                                    </div>
-                                    <div className="Row">
-                                        <div className="col">
-                                            <span color={"red"} >Email is Not Found</span>
+                            <br />
 
-                                        </div>
-                                    </div>
-
-                                </Container>
-                                <br/>
-                        </Card>
-                            <br/>
-                            <Card>
-                                <br/>
-                                <Container>
-                                    <div className="Row">
-                                        <div className="col">
-
-                                                <Form>
-                                                    <Form.Group>
-                                                        <Form.File id="exampleFormControlFile1"  />
-                                                    </Form.Group>
-                                                    <Button className="text-align-left" variant="info">Upload</Button>
-                                                </Form>
-
-
-                                        </div>
-                                    </div>
-                                    <div className="Row">
-                                        <div className="col">
-                                            <span color={"red"} >Email is Not Found</span>
-
-                                        </div>
-                                    </div>
-
-                                </Container>
-                                <br/>
-                        </Card>
+                            <ListMailChecker />
                         </Col>
                         <Col></Col>
                     </Row>
                 </Container>
+                <br />
             </React.Fragment>
         );
     }

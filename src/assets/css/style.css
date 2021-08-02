@@ -4,5 +4,27 @@
 }
 
 .text-align-left{
-    text-align: left;
+    text-align: left !important;
+}
+.text-color-red{
+    color: red;
+}
+.text-color-white{
+    color: white;
+}
+.footer-bg{
+    background-color: #282c34;
+}
+.footer-hr{
+    border-color: white;
+}
+.text-tomato{
+    color:tomato;
+}
+.text-tomato:hover{
+    color:red;
+}
+a:hover{text-decoration: none}
+.cDmETx {
+    min-height: 0px !important;
 }
